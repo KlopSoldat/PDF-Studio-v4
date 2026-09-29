@@ -326,6 +326,46 @@ border-radius:50%;animation:spin .8s linear infinite}
 </nav>
 <div class="sidebar-footer"><button class="nav-item" id="theme-toggle">
 <svg id="theme-icon"><use href="#i-sun"/></svg><span id="theme-label">Светлая тема</span></button></div>
+<aside class="sidebar" id="sidebar">
+  <a href="index.html" class="sidebar-logo" style="text-decoration:none;color:inherit;display:flex;align-items:center;gap:10px">
+    <svg viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2"><use href="#i-pdf"/></svg>
+    <div>
+      <div class="sidebar-logo-name">PDF Studio</div>
+      <div class="sidebar-logo-tag">In-browser</div>
+    </div>
+  </a>
+
+  <nav class="sidebar-nav">
+    <div class="nav-group">
+      <div class="nav-group-title">Редактировать</div>
+      <button class="nav-item active" data-view="edit"><svg><use href="#i-pages"/></svg>Страницы</button>
+      <button class="nav-item" data-view="search"><svg><use href="#i-search"/></svg>Поиск</button>
+    </div>
+    <div class="nav-group">
+      <div class="nav-group-title">Организовать</div>
+      <button class="nav-item" data-view="merge"><svg><use href="#i-merge"/></svg>Объединить</button>
+      <button class="nav-item" data-view="split"><svg><use href="#i-split"/></svg>Разделить</button>
+      <button class="nav-item" data-view="nup"><svg><use href="#i-layout"/></svg>N-up</button>
+    </div>
+    <div class="nav-group">
+      <div class="nav-group-title">Конвертировать</div>
+      <button class="nav-item" data-view="convert"><svg><use href="#i-convert"/></svg>PDF ↔ Картинки</button>
+    </div>
+    <div class="nav-group">
+      <div class="nav-group-title">Инструменты</div>
+      <button class="nav-item" data-view="tools"><svg><use href="#i-tool"/></svg>Оптимизация</button>
+      <button class="nav-item" data-view="header"><svg><use href="#i-header"/></svg>Колонтитулы</button>
+      <button class="nav-item" data-view="security"><svg><use href="#i-lock"/></svg>Безопасность</button>
+      <button class="nav-item" data-view="forms"><svg><use href="#i-form"/></svg>Формы</button>
+    </div>
+  </nav>
+
+  <div class="sidebar-footer">
+    <button class="nav-item" id="theme-toggle">
+      <svg id="theme-icon"><use href="#i-sun"/></svg>
+      <span id="theme-label">Светлая тема</span>
+    </button>
+  </div>
 </aside>
 
 <main class="main">
